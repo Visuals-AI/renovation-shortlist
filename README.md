@@ -2,6 +2,6 @@
 
 适配手机与电脑的静态汇报。导航包含匹配排名、资质分析、报价分析、客诉搜集。
 
-页面自包含样式与交互，无外部运行依赖。资料最后更新：2026-10-19。原始报价文件未公开。
+页面自包含样式与交互，无外部运行依赖。资料最后更新：2026-10-20。原始报价文件未公开。
 
-在线阅读：https://visuals-ai.github.io/house-design-sort/
+在线阅读：https://visuals-ai.github.io/renovation-shortlist/
