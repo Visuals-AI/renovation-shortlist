@@ -9,15 +9,67 @@
 
 body.locked #report-app{display:none!important}.access-gate[hidden]{display:none!important}.access-gate{min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:24px}.access-card{width:min(100%,400px);padding:32px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius)}.access-card h1{font-size:24px;margin:0 0 8px}.access-card p{color:var(--muted);font-size:14px}.access-card label{display:block;margin:24px 0 8px;font-weight:600}.access-card input{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px}.access-card button{margin-top:16px;width:100%;background:var(--green);color:white}.access-card .access-error{min-height:24px;margin:10px 0 0;color:#a13d2d;font-size:13px}
 </style></head>
-<body class="locked"><div id="access-gate" class="access-gate"><form id="access-form" class="access-card"><div class="brand-mark" aria-hidden="true">家</div><h1>装修选商报告</h1><p>请输入访问密码查看报告。</p><label for="access-password">访问密码</label><input id="access-password" type="password" autocomplete="current-password" required aria-describedby="access-error"><button type="submit">查看报告</button><p id="access-error" class="access-error" role="alert"></p><noscript><p>请启用浏览器 JavaScript 后输入密码。</p></noscript></form></div><div id="report-app" hidden><a class="skip" href="#main">跳到正文</a><div class="layout"><aside class="sidebar"><div class="brand-mark" aria-hidden="true">家</div><div class="brand-title">装修选商报告</div><div class="brand-sub">家庭需求 · 价格 · 交付</div><div class="nav-label">REPORT INDEX</div><nav class="nav" aria-label="汇报导航"><a href="#match" data-page="match"><span>01</span>匹配排名</a><a href="#qualification" data-page="qualification"><span>02</span>资质分析</a><a href="#pricing" data-page="pricing"><span>03</span>报价分析</a><a href="#payments" data-page="payments"><span>04</span>付款对比</a><a href="#complaints" data-page="complaints"><span>05</span>客诉搜集</a></nav><div class="sidebar-foot"><strong>4 家候选 · 5 个视角</strong><br>先按底线排除，再比较匹配。<br><br>资料更新 2026-10-20</div></aside><main id="main"><div class="topbar"><span>家庭装修 / 供应商评估汇报</span><div class="topbar-actions"><button id="expand-all" type="button">展开当前页</button><button id="print-report" type="button">打印完整报告</button><button id="lock-report" type="button">锁定</button></div></div><section id="match" class="report-panel" aria-labelledby="heading-match"><header class="page-heading"><div class="eyebrow">01 / 匹配排名</div><h1 tabindex="-1" id="heading-match">先看适不适合，再看名次</h1><p>按你的预算、家庭功能、沟通体验和交付底线评估。</p></header><div class="panel-content"><div class="rank-grid"><article class="rank-card"><div class="rank-top"><span class="rank-no">01</span><span class="chip">偏好匹配</span></div><h3>轩怡</h3><div class="score">71.20<small>/ 100</small></div><div class="score-track"><span style="width:71.2%"></span></div><p>沟通投入突出</p><small>核实镜门报价与全过程交付</small></article><article class="rank-card"><div class="rank-top"><span class="rank-no">02</span><span class="chip">偏好匹配</span></div><h3>星艺</h3><div class="score">66.60<small>/ 100</small></div><div class="score-track"><span style="width:66.6%"></span></div><p>动线设计有价值</p><small>保留收纳，核实班组与责任</small></article><article class="rank-card"><div class="rank-top"><span class="rank-no">03</span><span class="chip">偏好匹配</span></div><h3>维意</h3><div class="score">65.20<small>/ 100</small></div><div class="score-track"><span style="width:65.2%"></span></div><p>定制制造背景明确</p><small>保留候选，暂缓工艺考察</small></article><article class="rank-card"><div class="rank-top"><span class="rank-no">04</span><span class="chip">偏好匹配</span></div><h3>益鸟</h3><div class="score">64.60<small>/ 100</small></div><div class="score-track"><span style="width:64.6%"></span></div><p>沟通具体，交付能力待核</p><small>核实团队、付款范围与完整方案</small></article></div><p class="caption">分数衡量与你家的偏好匹配程度，施工管理与售后仍有待核项；不代表施工质量或履约概率。</p><details class="content-block" open><summary>当前建议</summary><div class="prose"><p>当前四家候选为<strong>轩怡、星艺、维意、益鸟</strong>。<br/>
-这份评估分别看<strong>偏好匹配、报价、客诉、资质与品牌背景、付款条件</strong>，不把不同维度的名次简单相加。<br/>
-当前匹配分为<strong>轩怡71.20分、星艺66.60分、维意65.20分、益鸟64.60分</strong>。分数表示与本户偏好的匹配程度，不是施工质量、信用评级或履约概率。<br/>
-<strong>先按底线核实，再比较匹配。</strong>整体交付联动不等于每个定制项目都留了验收尾款。目前付款条件仅有商家聊天确认和样板合同材料，仍需写入本户正式合同。</p>
-</div></details><details class="content-block" ><summary>评分依据与权重</summary><div class="prose"><p>业主给出的顺序是：<strong>成品效果＞沟通配合＞施工管理＞售后＞设计创意＞价格</strong>。<br/>
+<body class="locked"><div id="access-gate" class="access-gate"><form id="access-form" class="access-card"><div class="brand-mark" aria-hidden="true">家</div><h1>装修选商报告</h1><p>请输入访问密码查看报告。</p><label for="access-password">访问密码</label><input id="access-password" type="password" autocomplete="current-password" required aria-describedby="access-error"><button type="submit">查看报告</button><p id="access-error" class="access-error" role="alert"></p><noscript><p>请启用浏览器 JavaScript 后输入密码。</p></noscript></form></div><div id="report-app" hidden><a class="skip" href="#main">跳到正文</a><div class="layout"><aside class="sidebar"><div class="brand-mark" aria-hidden="true">家</div><div class="brand-title">装修选商报告</div><div class="brand-sub">家庭需求 · 价格 · 交付</div><div class="nav-label">REPORT INDEX</div><nav class="nav" aria-label="汇报导航"><a href="#match" data-page="match"><span>01</span>匹配排名</a><a href="#qualification" data-page="qualification"><span>02</span>资质分析</a><a href="#pricing" data-page="pricing"><span>03</span>报价分析</a><a href="#payments" data-page="payments"><span>04</span>付款对比</a><a href="#complaints" data-page="complaints"><span>05</span>客诉搜集</a></nav><div class="sidebar-foot"><strong>4 家候选 · 5 个视角</strong><br>先按底线排除，再比较匹配。<br><br>资料更新 2026-10-25</div></aside><main id="main"><div class="topbar"><span>家庭装修 / 供应商评估汇报</span><div class="topbar-actions"><button id="expand-all" type="button">展开当前页</button><button id="print-report" type="button">打印完整报告</button><button id="lock-report" type="button">锁定</button></div></div><section id="match" class="report-panel" aria-labelledby="heading-match"><header class="page-heading"><div class="eyebrow">01 / 匹配排名</div><h1 tabindex="-1" id="heading-match">星艺已复尺，待确认方案与协议</h1><p>截至10月25日基本确定合作方向，尚未确认签约付款；计划10月31日进一步确认。</p></header><div class="panel-content"><details class="content-block" open><summary>最新选择与状态</summary><div class="prose"><p><strong>星艺已成为基本确定的合作方向，尚未确认签约或付款。</strong>10月24日与家人看工地，10月25日已完成到家复尺；计划10月31日确认修改方案、报价及协议，届时可能交定金、签合同。<br/>
+选择主要基于本次现场准备、沟通兑现、家人感受，以及同一家统筹硬装、定制和门窗的付款与交付安排。两家带看工地的可见做工总体接近，均有小瑕疵；不能据此判定星艺整体施工质量胜出。</p>
+<div class="table-wrap"><table class="data-table plain-table" id="table-6">
+<thead>
+<tr>
+<th data-company="" scope="col">公司</th>
+<th data-company="" scope="col">最新状态</th>
+<th data-company="" scope="col">本次选择的主要原因与限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th data-company="" data-label="公司" scope="row">星艺</th>
+<td data-company="" data-label="最新状态">基本确定合作方向；已复尺，待核方案、报价和协议</td>
+<td data-company="" data-label="本次选择的主要原因与限制">现场路线及进入安排熟悉；先核方案报价再拟协议，没有立即催付款；家人整体更倾向。仍需核实本户项目经理、班组及合同责任</td>
+</tr>
+<tr>
+<th data-company="" data-label="公司" scope="row">轩怡</th>
+<td data-company="" data-label="最新状态">已告知基本确定另一家，不再并行推进</td>
+<td data-company="" data-label="本次选择的主要原因与限制">售前专业建议有帮助，但本次带看准备和现场熟悉程度未达预期，影响后续跟进信心；不是以工艺差作为主要淘汰理由</td>
+</tr>
+<tr>
+<th data-company="" data-label="公司" scope="row">益鸟</th>
+<td data-company="" data-label="最新状态">已在群里明确婉拒，不继续准备</td>
+<td data-company="" data-label="本次选择的主要原因与限制">前期跟进延期且缺少及时说明，影响沟通履约信任；不针对新接手人员个人能力。未看过其工地，不评价其现场工艺</td>
+</tr>
+<tr>
+<th data-company="" data-label="公司" scope="row">维意</th>
+<td data-company="" data-label="最新状态">已淘汰；是否发送最终拒绝消息未确认</td>
+<td data-company="" data-label="本次选择的主要原因与限制">对预付比例、定制验收尾款及报价性价比不满意；未确认看过工地</td>
+</tr>
+<tr>
+<th data-company="" data-label="公司" scope="row">物业美居</th>
+<td data-company="" data-label="最新状态">已明确拒绝合作</td>
+<td data-company="" data-label="本次选择的主要原因与限制">规模及售后安排未能建立足够信心；家人对所见工艺观感不满意，仅代表本次接触体验</td>
+</tr>
+</tbody>
+</table></div>
+<p>各家都提供过方案、材料建议和本小区精装交付潜在问题提醒，确实有帮助；未选中不代表没有价值。以上是本户接触体验与家庭判断，不泛化为品牌整体质量结论。<br/>
+<strong>历史评分不代表当前推荐顺序。</strong>此前问卷匹配分保留供追溯，不用旧分数推翻现场考察后的选择；本轮不编造新的数值排名。付款条件仍是聊天确认及样板材料，尚未落实为本户正式合同。</p>
+</div></details><details class="content-block" open><summary>周末考察与签约前核对</summary><div class="prose"><h3>10月24日现场体验</h3>
+<ul>
+<li><strong>可见工艺：</strong>轩怡、星艺总体差不多，均有小瑕疵，未描述重大缺陷。轩怡主要展示小面积翻新，星艺展示毛坯装修；项目类型不同，不能直接比较成体系的交付能力。</li>
+<li><strong>轩怡：</strong>提前三四天已沟通带看需求，当天两处工地找路耗时较多，现场熟悉程度不足。这影响业主对准备和跟进的信心；不能推断联系人平时很少去工地。一次老板与员工视频中的不耐烦观感，也不代表全部管理风格。</li>
+<li><strong>星艺：</strong>路线和进入安排熟悉，给业主经常到现场的感受；恰遇现场业主，对方未当面说不好，只是有限正面感受，不是明确背书或满意度验证。</li>
+<li><strong>细节争议：</strong>合页、灶台下沿、封窗轨道挡板等需看实物做法和采购责任；不能凭开孔或胶粘就判定工艺落后、必然损坏。轩怡解释部分收口会在后续质检整改，尚未验证最终结果。</li>
+</ul>
+<h3>10月25日进展与10月31日计划</h3>
+<p>星艺已完成复尺，下一步确认修改方案、报价和协议。预约不等于已签约或已付款；其他公司不再陪同推进。轩怡口头提出员工价等定制优惠，未核同配置价格，也未纳入现有报价；本户仍倾向一家统筹，不拆开采购施工。</p>
+<ol>
+<li><strong>范围与费用：</strong>以复尺后的图纸核对工程量、材料规格、必要安装、增减项及可选项，确认最终完整预算；现有报价保留历史口径。</li>
+<li><strong>实际团队：</strong>明确项目经理、现场负责人、班组稳定性、巡检及设计师关键节点参与，公司统一售后。</li>
+<li><strong>统一分期：</strong>硬装、定制、门窗是否均进入总造价30%／30%／30%／10%；1万元定金抵首期，不另叠加。澄清第二、三期“／”连接节点的真实触发条件，不能自行视为同时满足。</li>
+<li><strong>验收与整改：</strong>总造价最后10%须全部安装验收合格、整改完成才释放；变更事前书面确认，免费项目也列明范围与责任。核对签约、收款及售后主体。</li>
+</ol>
+</div></details><details class="content-block"><summary>历史问卷评分（非当前推荐顺序）</summary><div class="prose"><div class="rank-grid"><article class="rank-card"><div class="rank-top"><span class="rank-no">01</span><span class="chip">偏好匹配</span></div><h3>轩怡</h3><div class="score">71.20<small>/ 100</small></div><div class="score-track"><span style="width:71.2%"></span></div><p>沟通投入突出</p><small>已告知不再并行推进</small></article><article class="rank-card"><div class="rank-top"><span class="rank-no">02</span><span class="chip">偏好匹配</span></div><h3>星艺</h3><div class="score">66.60<small>/ 100</small></div><div class="score-track"><span style="width:66.6%"></span></div><p>动线设计有价值</p><small>已复尺，基本确定合作方向；尚未签约</small></article><article class="rank-card"><div class="rank-top"><span class="rank-no">03</span><span class="chip">偏好匹配</span></div><h3>维意</h3><div class="score">65.20<small>/ 100</small></div><div class="score-track"><span style="width:65.2%"></span></div><p>定制制造背景明确</p><small>已淘汰，拒绝消息未确认</small></article><article class="rank-card"><div class="rank-top"><span class="rank-no">04</span><span class="chip">偏好匹配</span></div><h3>益鸟</h3><div class="score">64.60<small>/ 100</small></div><div class="score-track"><span style="width:64.6%"></span></div><p>沟通具体，交付能力待核</p><small>已明确婉拒，不继续准备</small></article></div><p class="caption">原有评分保留供追溯，未纳入本次现场考察；当前合作方向为星艺。</p></div></details><details class="content-block" ><summary>评分依据与权重</summary><div class="prose"><p><strong>历史问卷评分：</strong>以下保留原评分依据，不包含10月24—25日考察与最终筛选，不作为当前合作推荐。最新选择以首页状态为准。<br/>
+业主给出的顺序是：<strong>成品效果＞沟通配合＞施工管理＞售后＞设计创意＞价格</strong>。<br/>
 权重依次为26、23、20、15、10、6分，依据业主的优先顺序设置，具体权重并非业主指定。<br/>
 每项按1—5级暂评：5为有较强的匹配证据，4为有正面证据但仍有条件，3为一般匹配或证据不足的中性占位，2为有明显不匹配，1为严重不匹配。标为“待核”的3级不表示已经具备合格施工或售后能力。<br/>
 总分＝各项权重×等级÷5后相加，不取整数，统一保留两位小数。小数表示计算结果，不表示证据精度提高。底线单独判断，不放入平均分。未核实到具体门店和项目的网络投诉，不用于扣分；宣传价和品牌名气不自动加分。</p>
-<div class="table-wrap"><table class="data-table vendor-table" id="table-6">
+<div class="table-wrap"><table class="data-table vendor-table" id="table-7">
 <thead>
 <tr>
 <th data-company="" scope="col">维度与权重</th>
@@ -84,23 +136,23 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 </div></details><div class="section-kicker">逐家看：优势与条件</div><details class="content-block" ><summary>轩怡</summary><div class="prose"><p><strong>优势：</strong>设计师多轮沟通、经验性提醒和细致修改得到业主认可。<br/>
 <strong>付款条件：</strong>硬装30%／40%／20%／10%；主材及定制30%／70%，确认图纸和订购合同单时生产前付清。商家聊天明确：全部合同内项目交付验收后才收硬装尾款，硬装完、定制未交付不算竣工。<br/>
 <strong>影响：</strong>整体交付联动比各项目互不制约更有利，但尾款仅硬装金额10%，不是总价10%，也不是定制本身留尾款。统一客户ID只是内部管理方式；联动条件与整改完成应写进本户合同。代购门窗5%—10%尾款及责任主体待落实，不能默认纳入整体联动。<br/>
-<strong>安排：</strong>已约周六看现场工艺；继续核实固定班组、唯一对接、设计师节点参与及镜门费用。</p>
+<strong>最新状态：</strong>10月24日已看工地；因带看准备与现场执行未达预期，已告知不再并行推进。此前售前投入和建议仍获认可。</p>
 </div></details><details class="content-block" ><summary>星艺</summary><div class="prose"><p><strong>优势与取舍：</strong>改门洞有动线价值，但不能牺牲半个衣柜来扩大活动空间；必须保留收纳、独立空间及阳台移门。<br/>
 <strong>付款条件：</strong>硬装、柜体、门窗合并总造价30%／30%／30%／10%；前期1万元设计深化定金计入首期30%，非额外收取；全部安装验收且整改完成才付最后10%。比例可协商，商家表示会写入合同。<br/>
 <strong>影响：</strong>统一尾款对全项目交付有制约，但定制下单前已累计90%，不能称为全程先施工后付款。当前只有聊天及样板材料，未签约。<br/>
-<strong>安排：</strong>已约周六看现场工艺。集体外包不自动等于质量差，仍需确认班组稳定、统一工艺、巡检和公司售后责任。</p>
+<strong>最新状态：</strong>10月24日已看工地、10月25日已复尺，基本确定合作方向；拟10月31日确认方案报价及协议，尚未签约付款。集体外包不自动等于质量差，仍需确认班组稳定、统一工艺、巡检和公司售后责任。</p>
 </div></details><details class="content-block" ><summary>维意</summary><div class="prose"><p><strong>优势：</strong>业主认可样板工艺观感；工艺观感不等于本户交付已验证。<br/>
 <strong>付款条件：</strong>局改50%／45%／5%，45%在墙灰进场前，5%表单注明竣工验收后付清；定制复尺签合同时付清余款，生产前100%。商家明确拒绝定制5%—10%验收尾款；局改尾款与定制交付联动未确认，门窗付款未明确。<br/>
 <strong>影响：</strong>与逐项留验收尾款的偏好存在明确冲突，局改5%不能当成定制验收保障；但不推断资金链或企业信用问题。<br/>
-<strong>当前状态：保留候选，暂不安排工艺考察，未淘汰。</strong></p>
-</div></details><details class="content-block" ><summary>益鸟</summary><div class="prose"><p><strong>暂评64.60分，当前第四，保留候选。</strong>已于10月20日展示报价及方案；提供“硬装半包＋定制柜”和“纯硬装半包”两个方案；比较采用前者，推算总额117515.24元，纯硬装51809.60元仅是其中硬装部分。配置和缺项未齐，价格项暂按中性等级。<br/>
+<strong>当前状态：已淘汰，未确认发送最终拒绝消息。</strong>主要原因是预付风险、定制尾款条件和报价性价比，未确认看过工地。</p>
+</div></details><details class="content-block" ><summary>益鸟</summary><div class="prose"><p><strong>最新状态：已明确婉拒，不继续准备。</strong>前期跟进延期且缺少及时说明影响沟通履约信任；没有看过益鸟工地。下述64.60分及会议评价为原有历史记录，不是当前推荐。已于10月20日展示报价及方案；提供“硬装半包＋定制柜”和“纯硬装半包”两个方案；比较采用前者，推算总额117515.24元，纯硬装51809.60元仅是其中硬装部分。配置和缺项未齐，价格项暂按中性等级。<br/>
 <strong>会议中的正面信息：</strong>称直营、自有精工师傅并买保险；同一对接人负责销售、设计、施工管理与交付；可通过小程序查看项目、签证及质保。这些是商家陈述，需用本户拟派团队和合同核实。<br/>
 <strong>合同模式：</strong>纯硬装方案在施工方案不变的前提下可做闭口合同；含定制方案因柜体未确定，暂不能将整单视为闭口价。标准付款签单50%、开工中45%、结算后5%。业主提出分硬装/定制留尾款，对方仅表示可再谈；不能记为已接受。允许外购定制并协助水电尺寸接口属于口述，责任边界待写清。<br/>
 <strong>范围缺口：</strong>景观阳台柜仍为木板价、镜门和H型梳妆台未明确；低的柜体合计不是同等完整效果的证据。<br/>
 <strong>变更授权边界：</strong>会议中额外施工、免费处理及夫妻间意见传达的例子，暴露了需要核实的确认流程。善意服务不等于获得授权；收费或免费改动均应事前书面确认，不能先施工后补同意。现有材料不足以认定乱收费，具体客诉及回应见下文。</p>
 <h4>六项评分及会议依据</h4>
 <p>依据：10月20日会议、小程序报价及方案讨论。下表时间点对应会议记录。</p>
-<div class="table-wrap"><table class="data-table plain-table" id="table-7">
+<div class="table-wrap"><table class="data-table plain-table" id="table-8">
 <thead>
 <tr>
 <th data-company="" scope="col">维度</th>
@@ -167,7 +219,7 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 <li>各家当前面积、数量属于预算估算，复尺后确认。尺寸差异本身不作为虚报或诚信扣分依据。</li>
 </ul>
 <h3>必做与可调整项目</h3>
-<div class="table-wrap"><table class="data-table plain-table" id="table-8">
+<div class="table-wrap"><table class="data-table plain-table" id="table-9">
 <thead>
 <tr>
 <th data-company="" scope="col">项目</th>
@@ -238,7 +290,7 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 </tbody>
 </table></div>
 <p>各家原报价尚未全部按上述需求范围重新编制。</p>
-</div></details><details class="content-block" open><summary>不能被总分抵消的条件</summary><div class="prose"><div class="table-wrap"><table class="data-table plain-table" id="table-9">
+</div></details><details class="content-block" open><summary>不能被总分抵消的条件</summary><div class="prose"><div class="table-wrap"><table class="data-table plain-table" id="table-10">
 <thead>
 <tr>
 <th data-company="" scope="col">条件</th>
@@ -276,15 +328,10 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 </tr>
 </tbody>
 </table></div>
-</div></details><details class="content-block" ><summary>下一轮只核实四件事</summary><div class="prose"><ol>
-<li><strong>付款条件书面落实：</strong>把本次聊天确认的比例、节点、联动范围和整改条件写进合同。逐项尾款偏好仍保留；轩怡整体联动不等于定制自身留款，维意保持候选但暂缓考察，益鸟需继续确认分项适用范围。</li>
-<li><strong>谁实际负责：</strong>唯一项目经理、设计师关键节点参与、稳定班组、公司巡检及统一售后能否落实。</li>
-<li><strong>方案是否满足家庭要求：</strong>两面柜墙、收纳不减少、整体镜面、可关闭独立空间及阳台移门保留；允许造型简化和门洞调整。</li>
-<li><strong>按最新版范围报完整费用：</strong>必做项单列，其他三房换砖列备选增量；阳台窗纱软隔断连同窗帘盒、遮蔽用天花列可选组合，分别给出保留、取消或简化的净价。给出含材料、必要安装和附加费的完整预算，不把估算工程量差异当恶意多报。</li>
-</ol>
+</div></details><details class="content-block" ><summary>下一轮只核实四件事</summary><div class="prose"><p>10月31日仅推进星艺：确认复尺方案与完整报价、实际施工团队、统一付款与节点、全部安装验收及整改后的尾款条件。具体清单见“周末考察与签约前核对”。尚未签约付款，其余公司不再并行推进。</p>
 </div></details></div></section><section id="qualification" class="report-panel" aria-labelledby="heading-qualification"><header class="page-heading"><div class="eyebrow">02 / 资质分析</div><h1 tabindex="-1" id="heading-qualification">品牌背后，谁负责交付</h1><p>区分装修企业、家具制造品牌与实际合同主体。</p></header><div class="panel-content"><div class="callout"><strong>装企背景、制造实力、施工资质分开看</strong><p>星艺与轩怡的经营背景直接关联装修业务；维意的家具制造背景，不能直接转给其硬装合作方。</p></div><div class="prose"><p>本项分别比较装修企业背景、定制家具制造背景和实际签约主体的施工资质。益鸟资料来自10月20日会议，尚未经独立资质核验。全国或区域门店覆盖不能直接代表本户施工质量。<br/>
 <strong>装企公开经营覆盖：星艺高于轩怡；定制家具制造背景：维意最明确；实际施工资质：暂不排名。</strong>维意本户硬装合作方与益鸟实际签约主体的有效证书尚未核齐，暂不强排。不能把家具制造品牌的规模直接计入其合作施工方，也不能把“未查清”当作“资质最差”。</p>
-<div class="table-wrap"><table class="data-table plain-table" id="table-10">
+<div class="table-wrap"><table class="data-table plain-table" id="table-11">
 <thead>
 <tr>
 <th data-company="" scope="col">业务定位</th>
@@ -810,7 +857,7 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 </div></details><details class="content-block" ><summary>报价对选择意味着什么</summary><div class="prose"><ul>
 <li><strong>轩怡：</strong>现列预算最高，差额主要在室内定制68232.70及升级、配件，不是硬装半包明显高于星艺。</li>
 <li><strong>星艺：</strong>含8000设计费后仍低于轩怡9243.33；但衣帽间柜量、餐边柜及美缝等需要按最新需求补齐，不能直接认定同需求更便宜。</li>
-<li><strong>维意：</strong>126777.74含第二套阳台柜估算，缺项、定制折扣和硬装主体边界仍需核；付款条件单独评估，当前保留候选、暂缓工艺考察。</li>
+<li><strong>维意：</strong>126777.74含第二套阳台柜估算，缺项、定制折扣和硬装主体边界仍需核；付款条件单独评估，已淘汰，报价保留作历史比较。</li>
 <li><strong>益鸟：</strong>按“硬装半包＋定制柜”比较，硬装51809.60，保留已报阳台及室内柜，并剔除主次卧可选柜后，含门窗及相应管理费共117515.24。纯硬装闭口方案不替代此组合预算。该低值不能视为同等完整镜面/H型方案，亦尚未更新景观柜改铝价格。<br/>
 <strong>当前列示金额顺序：益鸟（推算）＜维意＜星艺＜轩怡。</strong>仅用于定位费用差异，不是同范围最终价或性价比排名；匹配评分的价格项不因此自动改动。</li>
 </ul>
@@ -910,7 +957,7 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 </tbody>
 </table></div>
 </div></details></div></section><section id="payments" class="report-panel" aria-labelledby="heading-payments"><header class="page-heading"><div class="eyebrow">04 / 付款对比</div><h1 tabindex="-1" id="heading-payments">留下多少，约束哪些交付</h1><p>比较付款节点、留款基数、释放条件与尚待合同落实的事项。</p></header><div class="panel-content"><div class="callout amber"><strong>聊天已确认，正式合同待落实</strong><p>星艺、轩怡、维意已提供沟通截图和样板材料，具体条件仍需写入正式合同；益鸟的分项适用范围待确认。</p></div><div class="prose intro"><p>更新日期：<strong>2026-10-20</strong>。本节前三家以业主提供的商家聊天截图及样板合同/验收表为依据（已逐张核对）；益鸟以10月20日会议为依据。<strong>目前不是本户正式合同已落实，更不是已经签约的保障。</strong>不自行解释“／”为两个条件必须同时满足。</p>
-</div><details class="content-block" ><summary>沟通截图与证据状态</summary><div class="prose"><div class="table-wrap"><table class="data-table plain-table" id="table-13">
+</div><details class="content-block" ><summary>沟通截图与证据状态</summary><div class="prose"><div class="table-wrap"><table class="data-table plain-table" id="table-14">
 <thead>
 <tr>
 <th data-company="" scope="col">公司</th>
@@ -947,7 +994,7 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 </tbody>
 </table></div>
 <p>截图作为本地核对依据，公开报告仅展示事实摘要与文件索引。星艺对其他企业预收款原因的评价、维意对行业普遍做法的说法，不作为独立核实结论。</p>
-</div></details><details class="content-block" open><summary>四家付款条件逐项比较</summary><div class="prose"><div class="table-wrap"><table class="data-table vendor-table" id="table-14">
+</div></details><details class="content-block" open><summary>四家付款条件逐项比较</summary><div class="prose"><div class="table-wrap"><table class="data-table vendor-table" id="table-15">
 <thead>
 <tr>
 <th data-company="" scope="col">对比项</th>
@@ -1025,13 +1072,13 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 <th data-company="" data-label="对比项" scope="row">待落实事项</th>
 <td data-company="星艺" data-label="星艺">统一范围、定金抵扣、阶段节点、“／”含义、验收整改及尾款条款写入本户合同</td>
 <td data-company="轩怡" data-label="轩怡">整体交付联动、整改、各合同/订购单相互关联；内部统一客户ID不等于合同保障；门窗责任和尾款另核</td>
-<td data-company="维意" data-label="维意">局改尾款是否与定制联动；门窗付款及主体；保留候选但暂缓工艺考察</td>
+<td data-company="维意" data-label="维意">局改尾款是否与定制联动；门窗付款及主体；已淘汰；保留历史条款</td>
 <td data-company="益鸟" data-label="益鸟">50/45/5适用范围、45%阶段验收、分项尾款、签约主体、门窗厂家关系、平台与质保生效条件</td>
 </tr>
 </tbody>
 </table></div>
 </div></details><details class="content-block" open><summary>统一金额示例</summary><div class="prose"><p><strong>仅为示例，不是任何一家的实际报价：假设硬装5万元＋定制5万元，不含门窗。</strong></p>
-<div class="table-wrap"><table class="data-table plain-table" id="table-15">
+<div class="table-wrap"><table class="data-table plain-table" id="table-16">
 <thead>
 <tr>
 <th data-company="" scope="col">公司</th>
@@ -1069,7 +1116,7 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 </div></details><details class="content-block" open><summary>付款风险与考察安排</summary><div class="prose"><p><strong>按目前已确认的付款条件与交付制约能力，客户风险由低到高：星艺＜轩怡＜维意。</strong><br/>
 该结论只评价已确认的付款条件和交付制约能力，<strong>不等同于综合实力、施工质量或企业信用排名</strong>。星艺定制下单前已付90%，不能写成全程先施工后付款。轩怡的整体联动可提供一定制约，但留款占总预算较小；维意局改尾款尚不能证明覆盖定制交付。<br/>
 益鸟付款条款适用范围待确认，暂不参与付款风险排序。</p>
-<div class="table-wrap"><table class="data-table plain-table" id="table-16">
+<div class="table-wrap"><table class="data-table plain-table" id="table-17">
 <thead>
 <tr>
 <th data-company="" scope="col">公司</th>
@@ -1081,22 +1128,22 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 <tr>
 <th data-company="" data-label="公司" scope="row">星艺</th>
 <td data-company="" data-label="交付约束">统一总造价留10%，全部安装验收及整改完成后支付；需写入合同</td>
-<td data-company="" data-label="当前安排">已约周六看现场工艺</td>
+<td data-company="" data-label="当前安排">10月24日已看工地，10月25日已复尺；拟10月31日确认方案及协议，尚未签约付款</td>
 </tr>
 <tr>
 <th data-company="" data-label="公司" scope="row">轩怡</th>
 <td data-company="" data-label="交付约束">全部合同内项目交付联动，尾款仅为硬装金额10%；定制生产前付清</td>
-<td data-company="" data-label="当前安排">已约周六看现场工艺</td>
+<td data-company="" data-label="当前安排">10月24日已看工地；已告知不再并行推进</td>
 </tr>
 <tr>
 <th data-company="" data-label="公司" scope="row">维意</th>
 <td data-company="" data-label="交付约束">拒绝定制验收尾款；局改尾款与定制交付是否联动待确认</td>
-<td data-company="" data-label="当前安排">暂缓工艺考察，保留候选</td>
+<td data-company="" data-label="当前安排">已淘汰；未确认发出最终拒绝消息</td>
 </tr>
 <tr>
 <th data-company="" data-label="公司" scope="row">益鸟</th>
-<td data-company="" data-label="交付约束">50%／45%／5%为口述；分项适用范围和验收条件待确认</td>
-<td data-company="" data-label="当前安排">核实范围和书面条件</td>
+<td data-company="" data-label="交付约束">50%／45%／5%为口述；分项适用范围和验收条件未落实</td>
+<td data-company="" data-label="当前安排">已明确婉拒，不继续准备；未看过其工地</td>
 </tr>
 </tbody>
 </table></div>
@@ -1104,7 +1151,7 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 <strong>这些案例用于确定签约和验收时要关注的事项，不按投诉条数给四家公司扣分。</strong>案例涉及不同年份、门店及施工团队，目前均未证明是本户拟合作的项目经理或班组。益鸟案例于2026-10-21补充，来自公开网页检索及小红书原帖；尚未核实到佛山接洽团队的对应案例。会议中的“好评多”只能视为供应商自述，不能作为零投诉或口碑第一的依据。</p>
 </div><details class="content-block" ><summary>客诉排名及原因</summary><div class="prose"><p><strong>按目前收集案例的警示强度，由高到低暂排：星艺 ＞ 维意 ＞ 轩怡；益鸟不参与排序。</strong>排名第一表示最需要优先核查，不表示表现最好。若要排“真实投诉率最低”或“本户售后最可靠”，现有材料还不够。<br/>
 判断先看证据是否有独立支持及是否对应佛山项目，再看问题是否涉及质量、工期、费用和责任推诿，最后看商家回应及整改结果。只把与本户需求有关的案例用于判断；不按搜索条数计分，也不因宣传规模大就加重处罚。</p>
-<div class="table-wrap"><table class="data-table plain-table" id="table-11">
+<div class="table-wrap"><table class="data-table plain-table" id="table-12">
 <thead>
 <tr>
 <th data-company="" scope="col">警示排序</th>
@@ -1167,7 +1214,7 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 <strong>目前能确认的边界：</strong>查到了质量投诉及售后回应，但尚未找到可核实的佛山“未经同意施工／赠送后收费”案例。没有找到不等于没有发生；现有材料也不足以认定益鸟会无故增加很多收费项目。不把单方社媒内容或会议故事直接计为已证实违规，不据此调整64.60分。<br/>
 <strong>签约前落实：</strong>指定有权确认变更的业主及共同沟通渠道；门洞、收纳、镜面、颜色等家庭共同决策事项，由双方确认后施工。所有合同外改动，包括免费赠送，都先列清位置、做法、材料、数量、金额（免费写0元）、工期及质保影响，再书面确认；未获授权不先做后补单、不事后追收费用。赠送项目也纳入公司施工和售后记录，不能仅靠对接人私下找工人处理。请商家提供脱敏的实际变更确认单和售后整改闭环案例，核实这套流程是否真正执行。</li>
 </ul>
-</div></details><details class="content-block" ><summary>将客诉转成签约和验收关注点</summary><div class="prose"><div class="table-wrap"><table class="data-table plain-table" id="table-12">
+</div></details><details class="content-block" ><summary>将客诉转成签约和验收关注点</summary><div class="prose"><div class="table-wrap"><table class="data-table plain-table" id="table-13">
 <thead>
 <tr>
 <th data-company="" scope="col">反复出现的问题</th>
@@ -1202,6 +1249,7 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 </tbody>
 </table></div>
 </div></details><details class="content-block" ><summary>全部评估依据</summary><div class="prose"><ul>
+<li>2026-10-25业主提供的考察交接摘要：10月24日带看体验、10月25日复尺、最新筛选决定及付款沟通澄清；不是逐字记录，未附截图原件。个人体验与商家陈述分别标明。</li>
 <li>2026-10-20口径的业主最新补充：星艺、轩怡、维意的聊天确认付款条件及样板材料摘要及考察安排。尚非已签合同。</li>
 <li>2026-10-19业主补充的阳台窗纱软隔断、窗帘盒与配套天花关联成本，以及隔断作为可选项的要求。</li>
 <li>2026-10-18至19日逐题问答及此前业主对设计师、样板、方案和施工组织的亲身反馈。</li>
@@ -1212,7 +1260,7 @@ body.locked #report-app{display:none!important}.access-gate[hidden]{display:none
 <li><span class="source-file" title="原始资料索引；文件未随公开报告发布">益鸟报价与会议记录〔原始资料〕</span>：原单、施工/代购范围、资质与付款口述及时间点。</li>
 <li><span class="source-file" title="原始资料索引；文件未随公开报告发布">首轮面谈记录〔原始资料〕</span>：仅采用可定位的现场观察；早期价格评价和付款概述有后续修正，以较新资料及业主补充为准。</li>
 </ul>
-</div></details></div></section><footer><div class="footer-line"><span>资料最后更新：2026-10-20 · 以现有报价及业主反馈为依据</span><span>实际工程量待复尺，合同条件待确认</span></div><p>原始报价文件仅列资料索引，未随公开页面发布。外部投诉链接可能需要登录；案例陈述与认定范围请查看各项说明。</p></footer></main></div></div><script>
+</div></details></div></section><footer><div class="footer-line"><span>资料最后更新：2026-10-25 · 以现有报价及业主反馈为依据</span><span>实际工程量待复尺，合同条件待确认</span></div><p>原始报价文件仅列资料索引，未随公开页面发布。外部投诉链接可能需要登录；案例陈述与认定范围请查看各项说明。</p></footer></main></div></div><script>
 
 const accessKey='renovation-shortlist-access-v1';
 const accessGate=document.querySelector('#access-gate'),reportApp=document.querySelector('#report-app'),accessForm=document.querySelector('#access-form'),accessInput=document.querySelector('#access-password'),accessError=document.querySelector('#access-error');
